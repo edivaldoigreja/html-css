@@ -15,7 +15,7 @@
     }
 
     td,th{
-        border: 1px solid black;
+        border: 1px solid rgb(0, 0, 0);
         padding: 10px;
         text-align: center;
     
@@ -23,14 +23,25 @@
     }
 
     thead, tfoot{
-        background-color: rgb(105, 104, 104);
+        background-color: rgb(68, 65, 65);
         color: white;
     }
     td.num{
         text-align: right;
-        background-color: bisque;
-        color: black;
+       
+        color: rgb(19, 18, 18);
     }
+caption.cap{
+    background-color: rgba(178, 179, 174, 0.979);
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+tbody tr:nth-child(2n){
+    background-color: lightgray;
+}
 </style>
 
 </head>
@@ -43,10 +54,11 @@
      TBODY( DENTRO DO CORPO TAMBÉM POSSSO TER AS TAGS ANTERIORES)
      TFOOT( E NO RODAPÉ TAMBÉM POSSO TER ELAS)-->
 <Table>
+    <caption class="cap">TABELA DOS ESTADOS</caption>
 <thead>
 <tr>
-    <th>Estado</th>
-    <th>População</th>
+    <th scope="col">Estado</th>
+    <th scope="col" style="width: 50px;">População</th>
 </tr>
 </thead>
 <tbody>
@@ -130,8 +142,8 @@
 </tbody>
 <tfoot>
 <tr>
-    <th>Total de Habitantes</th>
-    <td class="num"><strong>157.225.088</strong></td>
+    <th scope="row">Total de Habitantes</th>
+    <td style="color: white;" class="num"><strong>157.225.088</strong></td>
 </tr>
 
 </tfoot>
