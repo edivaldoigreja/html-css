@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        th, td{
+            border: 1px solid rgb(83, 83, 83);
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exercicios De Tabelas</h1>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <Th colspan="3" scope="colgroup">Filmes</Th>
+                
+            </tr>
+            
+        </thead>
+        <tfoot>
+            <tr>
+              <th colspan="4" scope="row">Total</th>
+              <td>1000</td>  
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+            <th rowspan="3" scope="rowgroup" >Mulheres</th>
+            <td> Ana Maria Santos</td>
+            <td>Aliens</td>
+            <td>rambo</td>
+            <td>Vingadores</td>
+            </tr>
+            <tr>
+            <td>Beatriz Sousa</td>
+            <td>futebol</td>
+            <td>fifa</td>
+            <td>futebol americano</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>oblivian</td>
+                <td>hulk</td>
+                <td>homem aranha</td>
+            </tr>
+            
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>joao e maria o filme</td>
+                <td>falcon</td>
+                <td>as branquelas</td>
+            </tr>
+            <tr>
+                <td>juninho gomes</td>
+                <td>fifa</td>
+                <td>vivo</td>
+                <td>star wors</td>
+
+
+            </tr>
+            <tr>
+                <td>miller gomes</td>
+                <td>pantera cor de rosa</td>
+                <td>goat</td>
+                <td>funk</td>
+            </tr>
+            
+        </tbody>
+
+    </table>
+</body>
+</html>
